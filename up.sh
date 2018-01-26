@@ -53,7 +53,7 @@ NOVACLIENT_BRANCH=newton-eol
 REQUIREMENTS_BRANCH=stable/newton
 SWIFT_BRANCH=newton-eol
 SWIFTCLIENT_BRANCH=newton-eol
-SWIFT3_BRANCH=newton-eol
+SWIFT3_BRANCH=master
 OPENSTACKCLIENT_BRANCH=newton-eol
 
 ## Neutron options
