@@ -51,9 +51,6 @@ NEUTRON_LIB_BRANCH=newton-eol
 NOVA_BRANCH=stable/newton
 NOVACLIENT_BRANCH=newton-eol
 REQUIREMENTS_BRANCH=stable/newton
-SWIFT_BRANCH=newton-eol
-SWIFTCLIENT_BRANCH=newton-eol
-SWIFT3_BRANCH=v1.11
 OPENSTACKCLIENT_BRANCH=newton-eol
 
 ## Neutron options
@@ -62,13 +59,6 @@ FIXED_RANGE=10.0.0.0/24
 FLOATING_RANGE=172.18.161.0/24
 PUBLIC_NETWORK_GATEWAY=172.18.161.1
 PUBLIC_INTERFACE=$network_interface
-
-# Enable Swift (Object Store) without replication
-enable_service s-proxy s-object s-container s-account swift3
-SWIFT_HASH=66a3d6b56c1f479c8b4e70ab5c2000f5
-SWIFT_REPLICAS=1
-SWIFT_DATA_DIR=/opt/stack/data/swift
-SWIFT_LOOPBACK_DISK_SIZE=20G
 
 # Enable Neutron (Networking)
 # to use nova net rather than neutron, comment out the following group
