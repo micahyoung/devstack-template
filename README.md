@@ -5,7 +5,7 @@ This will standup a devstack VM
 ## Requiremnents
 
 * Host IP of 10.10.0.4 (or override in up.sh)
-* 2 network interfaces (public facing one called `ens224`)
+* 2 network interfaces (internet facing one called `ens224`)
 
 ## Execute
 
