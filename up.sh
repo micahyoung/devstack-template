@@ -134,11 +134,7 @@ openstack flavor create m1.xlarge --public --vcpus 1 --ram 16384 --disk 100
 openstack flavor create r3.xlarge --public --vcpus 1 --ram 16384 --disk 10 --ephemeral 32
 
 #output private net uuid
-echo private
 openstack network show private -c id
-
-echo public
-openstack network show public -c id
 
 # required for private network routing
 echo Now run:
