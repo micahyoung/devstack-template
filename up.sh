@@ -82,6 +82,14 @@ cat > post-stack.sh <<EOF
 #IP forward rules
 source ./openrc admin demo
 
+#Clean-up
+openstack project delete invisible_to_admin
+openstack project delete alt_demo
+openstack user delete alt_demo
+
+#Make demo user an admin
+openstack role add --project demo --user demo admin
+
 #Bosh
 openstack quota set demo --instances 25
 openstack quota set demo --cores 25
