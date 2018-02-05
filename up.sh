@@ -76,6 +76,7 @@ disable_service n-novnc tempest
 
 # Speedups
 GIT_BASE="$GIT_BASE"
+CINDER_VOLUME_CLEAR=none # don't zero-out volumes on deletion
 EOF
 
 cat > post-stack.sh <<EOF
